@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel blog</title>
+    <style>
+        .header{
+            display: flex;
+        }
+        #id{
+            color: #131318;
+            font-family: Mulish;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+        #travel{
+            color: #FF5400;
+            font-family: Mulish;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+        .header2{
+            display: flex;
+            gap: 20px;
+        }   
+        section{
+            display: flex;
+            margin: 0px auto;
+            justify-content: space-between;
+            
+            
+        }
+        .header3{
+            background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
+            width: 1170px;
+            height: 500px;
+            flex-shrink: 0;
+            text-align: center;
+            border-radius: 16px;
+        }
+        .Exploring{
+            
+            color: #FFF;
+            font-family: Mulish;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            padding-left: 0px;
+        }
+        .dolor{
+            width: 676px;
+            color: #FFF;
+            text-align: center;
+            font-family: Mulish;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 162.5% */
+            padding-left: 0px;
+        }
+        .input{
+            text-align: justify;
+            padding-left: 250px;
+        }
+        .hetaro{
+            width: 1170px;
+            height: 500px;
+            flex-shrink: 0;
+            margin-top: 50px;
+        }
+        .temper{
+            color: #5A5A5D;
+            font-family: Mulish;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 162.5% */
+        }
+        #Popular{
+            color: #131318;
+            text-align: center;
+            font-family: Mulish;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+        #read{
+            width: 174px;
+            height: 52px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: #FF5400;
+        }
+        .gridbox{
+            display: grid;
+            grid-template-columns: (1,1fr);
+            width: 1170px;
+            margin-top: 20px;
+            
+        }
+        .png2 , .png3 , .png22{
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+           }
+        .pics{
+            gap: 10px;
+
+
+        } 
+        .title{
+            text-align: center;
+        } 
+        .title1{
+            color: #131318;
+            text-align: center;
+            font-family: Mulish;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+        .title2{
+            width: 643px;
+            color: rgba(19, 19, 24, 0.70);
+            text-align: center;
+            font-family: Mulish;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; 
+            padding-left: 250px;
+
+        } 
+        .text1{
+            background-color: darksalmon;
+            width: 373px;
+            height: 184px;
+            flex-shrink: 0;
+            margin: 0px auto;
+            margin-bottom: 10px;
+            border-radius: 16px;
+
+        }
+        .text22{
+            background-color: aquamarine;
+            width: 573px;
+            height: 284px;
+            flex-shrink: 0px;
+            border-radius: 16px;
+            margin-right: 10px;
+
+        }
+        .text23{
+            background-color: cadetblue;
+            width: 573px;
+            height: 284px;
+            flex-shrink: 0;
+            border-radius: 16px;
+        }
+        .text2{
+            display: flex;
+            
+        }
+        .text3{
+            background-color: cornflowerblue;
+            width: 373px;
+            height: 184px;
+            flex-shrink: 0;
+            margin: 0px auto;
+            margin-top: 10px;
+            border-radius: 16px;
+        }
+        .hotel{
+            display: grid;
+            grid-template-columns: (1,1fr);
+            margin: 0px auto;
+            text-align: center;
+            background-color: azure;
+            width: 1170px;
+            margin-top: 60px;
+            border-radius: 16px;
+
+        }
+        .Simple{
+            width: 1170px;
+            margin: 0px auto;
+            margin-top: 70px;
+            display: flex;
+        }
+        .a{
+            color: #131318;
+            width: 448px;
+            font-family: Mulish;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 60px; /* 150% */
+        }
+        .b{
+            color: #5A5A5D;
+            width: 532px;
+            font-family: Mulish;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 162.5% */
+          
+        }
+        .c{
+            color: #131318;
+            font-family: Mulish;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px; /* 162.5% */
+
+        }
+        .button2{
+            width: 174px;
+            border-radius: 8px;
+            background: #FF5400;
+            height: 52px;
+            flex-shrink: 0;
+        }
+        .news{
+            width: 1170px;
+            margin: 0px auto;
+            margin-top: 70px;
+            display: flex;  
+
+        }
+        .aa{
+            color: #131318;
+            font-family: Mulish;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+        .bb{
+            color: #5A5A5D;
+            width: 350px;
+            font-family: Mulish;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 162.5% */
+
+        }
+        .cc{
+            display: grid;
+            grid-template-columns: (1,1fr);
+            gap: 20px;
+        }
+        .dd{
+            width: 393px;
+            height: 52px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: #FF5400;
+
+        }
+        footer{
+            width: 1440px;
+            height: 502px;
+            flex-shrink: 0;
+            background: rgba(19, 19, 24, 0.05);
+            text-align: center;
+            margin-top: 40px;
+            
+        }
+        .hero{
+            color: #FF5400;
+            font-family: Mulish;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+
+        }
+        span{
+            color: var(--Dark-01, #131318);
+            font-family: Mulish;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+        }
+        .lorem{
+            color: #5A5A5D;
+            width: 769px;
+            text-align: center;
+            font-family: Mulish;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 162.5% */
+            padding-left: 300px;
+
+        }
+        .all{
+            color: #131318;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            padding-top: 100px;
+
+        }
+        .bah{
+            padding-top: 200px;
+        }
+
+           
+        @media screen and (max-width:600px){
+           .header3{
+            width: 335px;
+            height: 483px;
+            flex-shrink: 0;
+            
+            .Exploring{
+                color: #FFF;
+                font-family: Mulish;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+               
+
+            }
+            
+            .input{
+                
+               display: grid;
+               grid-template-columns: (1,1fr);
+               grid-auto-columns: 200px;
+               width: 200px;
+               height: 400px;
+
+               
+                
+                
+            }
+            .dolor{
+                
+                
+                text-align: left;
+                width: 100px;
+                color: #FFF;
+                
+                font-family: Mulish;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 21px;
+
+                
+            }
+            span{
+                text-indent: -200px;
+            }
+            .inpt{
+                width: 200px;
+                gap: 10px;
+                text-align: center;
+               
+            }
+            .cont
+            .Exploring{
+                width: 210px;
+            }
+            .Exploring , .dolor{
+                
+                text-indent: -190px;
+
+            }
+            .dolor{
+                margin-left: -40px;
+            }
+            .container{
+                
+                text-align: center;
+                text-indent: -200px;
+                grid-auto-columns: 200px;
+                margin-left: -40px;
+                grid-template-columns: 40px,40px,40px,40px;
+                
+            }
+            
+            
+           }
+           .hetaro{
+            display: grid;
+            grid-template-columns: (1,1fr);
+            display: inline-block;
+           } 
+           .div1{
+            height: 384px;
+            width: 335px;
+            
+           }
+           .div2{
+           margin-top: 250px;
+           }
+           .responsive{
+            width: 335px;
+            height: 400px;
+           }
+           .png2{
+            display: grid;
+            grid-template-columns: (1,1fr);
+           }
+           .png3{
+            display: grid;
+            grid-template-columns: (1,1fr);
+           }
+           .png22{
+            display: grid;
+            grid-template-columns: (1,1fr);
+           }
+           .same{
+            width: 335px;
+            height: 176px;
+            flex-shrink: 0;
+           }
+           .title1{
+            color: #131318;
+            text-align: center;
+            font-family: Mulish;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-indent: -100px;
+
+           }
+           .title2{
+            width: 109px;
+            color: rgba(19, 19, 24, 0.70);
+            text-align:left;
+            font-family: Mulish;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
+            text-indent: -150px;
+            margin-left: -50px;
+            text-align: center;
+           }
+           .text1,.text22,.text23,.text3{
+            width: 335px;
+            height: 176px;
+           }
+           .text2{
+            display: grid;
+            grid-template-columns: (1,1fr);
+            gap: 10px;
+           }
+           .Simple{
+            display: grid;
+            grid-template-columns: (1,1fr);
+            gap: 20px;
+           }
+           
+           .a{
+            color: #131318;
+            width: 248px;
+            font-family: Mulish;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 30px; /* 150% */
+
+           }
+           .b{
+            color: rgba(19, 19, 24, 0.70);
+            width: 335px;
+            font-family: Mulish;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
+
+           }
+           .c{
+            color: #131318;
+            width: 335px;
+            font-family: Mulish;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 171.429% */
+
+           }
+           .recpic {
+            width: 335px;
+            height: 176px;
+            flex-shrink: 0;
+           }
+           .news{
+            display: grid;
+            grid-template-columns: (1,1fr);
+            gap: 20px;
+           }
+           .haha{
+            width: 335px;
+            height: 353px;
+            flex-shrink: 0;
+
+           }
+           .ee{
+            width: 335px;
+            height: 300px;
+            flex-shrink: 0;
+
+           }
+           footer{
+            width: 375px;
+            height: 309px;
+            flex-shrink: 0;
+            
+           }
+           .lorem{
+            color: #5A5A5D;
+            width: 287px;
+            text-align: center;
+            font-family: Mulish;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
+            justify-content: right;
+            margin-left: -300px;
+            
+           }
+
+           .all{
+            color: #131318;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            width: 100%;
+            top: 60%;
+            transform: translateY(-60%);
+           }
+           .bah{
+            display: grid;
+            grid-template-columns: (1,1fr);
+            justify-content:center;
+            margin-bottom: -50px;
+            text-align: center;
+            width: 100%;
+            top: 30%;
+            transform: translateY(-30%);
+            
+
+            
+           }
+           
+          
+
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <div class="header">
+                <img src="Images/Group 40071 (2).png" alt="">
+                <h1 ><span>MY</span></h1>
+                <h1 id="travel">TRAVEL</h1>
+            </div>
+            <div class="header2">
+                <a style="text-decoration:none" href="Home">Home</a>
+                <a style="text-decoration:none" href="Packages">Packages</a>
+                <a style="text-decoration:none" href="Testimonia">Testimonia</a>
+                <a style="text-decoration:none" href="Blog">Blog</a>
+                <a style="text-decoration:none" href="Contact">Contact</a>
+            </div>
+        </section>
+        <section class="header3">
+            <div class="input">
+                <h1 class="Exploring">Exploring  My Travel</h1>
+                <p class="dolor">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac quis sapien urna eu phasellus.</span></p>
+                
+                <div class="container">
+                    <input class="inpt" type="none" name="" id="" placeholder="where go">
+                    <input class="inpt" type="none" name="" id="" placeholder="when">
+                    <input class="inpt" type="none" name="" id="" placeholder="select type">
+                    <button class="inpt">
+                    <img src="https://www.figma.com/file/KHFjOqSgFe95LcFX1v7700/Travel-Website-Design?type=design&node-id=8-20&mode=dev" alt="">
+                        find now
+                    </button>
+                </div>
+            </div>    
+        </section>
+    </header>
+    <main>
+        <section class="hetaro">
+            <div class="div1">
+                <h1 id="Popular">Our Popular Tours</h1>
+                <p class="temper">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+                <ul class="temper">
+                    <li>Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</li>
+                    <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+                    <li>Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</li>
+                </ul>
+                <p class="temper">Amet consectetur. Vulputate commodo felis molestie risus 
+                    ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
+                <button id="read">Read More</button>    
+            </div>
+            <div class="div2">
+                <img src="Images/Rectangle 4.png" alt="" class="responsive">
+            </div>
+        </section>
+        <section class="gridbox">
+            <divc class="title">
+                <h1 class="title1">Choose Your Destination</h1>
+                <p class="title2">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+            </div>
+            <div class="pics">
+                <div class="png2">
+                    <img src="Images/Rectangle 5.png" alt="" class="same">
+                    <img src="Images/Rectangle 8.png" alt="" class="same">
+                </div>
+                <div class="png3">
+                    <img src="Images/Rectangle 6.png" alt="" class="same">
+                    <img src="Images/Rectangle 7.png" alt="" class="same">
+                    <img src="Images/Rectangle 9.png" alt="" class="same">
+                </div>
+                <div class="png22">
+                    <img src="Images/Rectangle 11.png" alt="" class="same">
+                    <img src="Images/Rectangle 10.png" alt="" class="same"> 
+                </div>
+            </div>
+        </section>
+        <section class="hotel">
+            <div class="text1">
+                <h1>Why Choose Us</h1>
+                <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+            </div>
+            <div class="text2">
+                <div class="text22">
+                    <h1>Handpicked Hotels</h1>
+                    <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
+                </div>
+                <div class="text23">
+                    <h1>World Class Service</h1>
+                    <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
+                </div>
+            </div>
+                
+                
+            <div class="text3">
+                <h1>Best Price Guarantee</h1>
+                <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
+            </div>
+                
+            
+        </section>
+        <section class="Simple">
+            <div class="perfect">
+                <h1 class="a">A Simple Perfect Place To Get Lost</h1>
+                <p class="b">Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. </p>
+                <ul class="c">
+                    <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+                    <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+                </ul>
+                <button class="button2">see more</button>
+            </div>
+            <div class="perfect2">
+                <img src="Images/Rectangle 11.png" alt="" class="recpic">
+            </div>
+        </section>
+        <section class="news">
+            <div class="haha">
+                <h1 class="aa">Newsletter</h1>
+                <p class="bb">Get your daily dose of travel news & tips. Sign up today!</p>
+                <div class="cc">
+                    <input type="name" name="" id="" placeholder="enter your name">
+                    <input type="email" name="" id="" placeholder="enter your email">
+                    <button class="dd">Subscribe</button>
+                </div>
+            </div>
+            <div>
+                <img src="Images/Rectangle 8 (1).png" alt="" class="ee">
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="bah">
+            <h1 class="hero"><span>Hero</span> Travel</h1>
+            <p class="lorem">Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae blandit orci potenti vulputate. Leo erat maecenas vitae elementum ultricies nullam.</p>
+            <p class="all">2017, All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
